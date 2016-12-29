@@ -9,7 +9,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-exclude: ['/node_modules/','**.sublime-project','**.sublime-workspace','gulpfile.js','package.json','.git']
+permalink: pretty
+exclude: ['/node_modules/','**.sublime-project','**.sublime-workspace','gulpfile.js','package.json','.git','README.md']
 
 # Build settings
 markdown: kramdown
+theme: null

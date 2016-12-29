@@ -4,10 +4,12 @@
     <div class="description">{{site.description}}</div>
     <nav class="site-nav" role="navigation">
       <div class="menu">
-      {% assign section = page.url | remove_first:'/' | split:'/' | first %}
+      {% assign pages = site.html_pages | sort: 'position' %}
 
-      {% for page in site.pages %}
-        <li class="menu-item"><a href="{{page.url}}">{{page.title}}</a></li>
+      {% for node in pages %}
+      {% unless node.hidden %}
+        <li class="menu-item{% if page.url contains node.url %} is-current{% endif %}"><a href="{{node.url}}">{{node.title}}</a></li>
+      {% endunless %}
       {% endfor %}
       </div>
     </nav>

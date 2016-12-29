@@ -78,6 +78,10 @@ b {
   font-weight: bold;
 }
 
+.is-current {
+  text-decoration: line-through;
+}
+
 .description {
   color: $grey;
   font-style: italic;
