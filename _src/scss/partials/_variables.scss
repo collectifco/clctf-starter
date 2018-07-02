@@ -3,7 +3,7 @@ $line-height-unitless: 1.45;
 $line-height: #{($base-font-size*$line-height-unitless)};
 $line-height-2x: #{($base-font-size*$line-height-unitless)*2};
 
-$primary-color: #00cfb5;
+$primary-color: #b4dde9;
 $secondary-color: #c00;
 
 $subdued-grey: #fafafa;
@@ -11,7 +11,8 @@ $light-grey: #cedbe2;
 $grey: #95a7b1;
 $dark-grey: #7290a0;
 $white: #fff;
-$black: #222;
+$black: #3F515D;
+$very-black: #050708;
 
 $body-text-color: $black;
 $heading-text-color: #111;
@@ -23,9 +24,9 @@ $link-color: $primary-color;
 
 // Fonts
 // A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack
-$sans: -apple-system, BlinkMacSystemFont, "Roboto", Helmet, Freesans, sans-serif;
+$sans: 'Post Grotesk', post-grotesk, -apple-system, BlinkMacSystemFont, "Roboto", Helmet, Freesans, sans-serif;
 
-$serif: Georgia, serif;
+$serif: Calluna, Georgia, serif;
 
 $monospace: Monaco, Menlo, 'Ubuntu Mono', Consolas, monospace;
 

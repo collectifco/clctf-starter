@@ -3,7 +3,6 @@ body {
   font-family: $sans;
   line-height: 1.45;
   color: $body-text-color;
-  background-color: #fafafa;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -13,11 +12,13 @@ p {
 }
 
 h1 {
-  font-size: #{1.8*$base-font-size};
+  font-size: #{1.8 * $base-font-size};
+  margin-bottom: $line-height;
 }
 
 h2 {
-  font-size: #{1.4*$base-font-size};
+  font-size: #{1.4 * $base-font-size};
+  margin-bottom: $line-height;
 }
 
 h3 {
@@ -32,6 +33,7 @@ article h1 {
 ul,
 ol {
   padding-left: 1.4rem;
+  margin-bottom: $line-height;
 }
 
 blockquote {

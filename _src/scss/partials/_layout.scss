@@ -1,3 +1,7 @@
+body {
+  background-color: $subdued-grey;
+}
+
 .wrapper {
   width: 90%;
   @include outer-container();
