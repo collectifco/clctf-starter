@@ -1,43 +1,67 @@
 body {
   font-size: $base-font-size;
   font-family: $sans;
-  line-height: 1.45;
+  line-height: $line-height-unitless;
   color: $body-text-color;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
   margin-bottom: $line-height;
 }
 
-h1 {
-  font-size: #{1.8 * $base-font-size};
+h1,
+.h1 {
+  font-size: $b2;
   margin-bottom: $line-height;
 }
 
-h2 {
-  font-size: #{1.4 * $base-font-size};
+h2,
+.h2 {
+  font-size: $b1;
   margin-bottom: $line-height;
 }
 
-h3 {
+h3,
+.h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-article h1 {
-  margin-bottom: $line-height;
+h4,
+.h4 {
+}
+
+h5,
+.h5 {
+}
+
+h6,
+.h6 {
+}
+
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+  // j.mp/webkit-tap-highlight-color
+  &:link {-webkit-tap-highlight-color: $secondary-color;}
 }
 
 ul,
 ol {
-  padding-left: 1.4rem;
+  padding-left: $line-height;
   margin-bottom: $line-height;
 }
 
 blockquote {
-  margin-left: 1rem;
+  margin-left: $line-height;
   font-style: italic;
   color: $grey;
 }
@@ -48,11 +72,9 @@ aside {
 
 pre,
 code {
-  // font-size: inherit;
+  font-size: inherit;
   font-family: $monospace;
   background: $light-grey;
-  // padding: 0.25rem 0.375rem;;
-  // border-radius: 3px;
 }
 
 code {
@@ -72,6 +94,19 @@ i {
 
 strong,
 b {
+  font-weight: bold;
+}
+
+ins {
+  background-color: #fcd700;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #fcd700;
+  color: #000;
+  font-style: italic;
   font-weight: bold;
 }
 
